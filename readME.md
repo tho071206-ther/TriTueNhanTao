@@ -26,8 +26,8 @@ là một thuật toán thuộc nhóm học có giám sát, được sử dụng
 K-NN hoạt động dựa trên giả định rằng các điểm dữ liệu tương tự nhau sẽ nằm gần nhau trong không gian đặc trưng (Feature Space).
 Đây là một thuật toán **"Lười biếng" (Lazy Learner)** vì nó không học một mô hình chung trong giai đoạn huấn luyện mà chỉ lưu trữ toàn bộ dữ liệu huấn luyện.
 
-### Quá trình Phân loạiKhi có một điểm dữ liệu mới (x_{new}) cần dự đoán nhãn:
-
+### Quá trình Phân loại
+Khi có một điểm dữ liệu mới (x_{new}) cần dự đoán nhãn:
 1. **Tính khoảng cách:** Tính khoảng cách (thường là khoảng cách Euclidean) từ x_{new} đến tất cả các điểm dữ liệu trong tập huấn luyện.
 2. **Tìm K láng giềng:** Sắp xếp khoảng cách theo thứ tự tăng dần và chọn ra K điểm lân cận gần nhất.
 3. **Bỏ phiếu đa số (Majority Voting):** Nhãn của điểm dữ liệu mới sẽ được gán bằng nhãn phổ biến nhất (xuất hiện nhiều nhất) trong K điểm lân cận đã chọn.
